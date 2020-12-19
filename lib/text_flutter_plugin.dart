@@ -8,7 +8,7 @@ class TextFlutterPlugin {
       const MethodChannel('text_flutter_plugin');
 
   static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
+    final String version = await _channel.invokeMethod('showCaptcha');
     return version;
   }
 }
