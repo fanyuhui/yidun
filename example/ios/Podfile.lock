@@ -7,6 +7,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - NTESVerifyCode
   - yidun_plugin (from `.symlinks/plugins/yidun_plugin/ios`)
 
 SPEC REPOS:
@@ -24,6 +25,6 @@ SPEC CHECKSUMS:
   NTESVerifyCode: 1bb76683eefcd99da42bdb22d11ab24e9baeb171
   yidun_plugin: 066d9c8f30c7b48ef0aa5c2d03d5e5aa8f4cfa43
 
-PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+PODFILE CHECKSUM: 845c618fa5d02192501d16a3e2233ffcc6158576
 
 COCOAPODS: 1.9.3
