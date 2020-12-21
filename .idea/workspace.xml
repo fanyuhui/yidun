@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f96023c5-2c52-4535-8877-4cc22c7f16e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/YidunPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/YidunPlugin.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/yidun_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yidun_plugin.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -70,5 +74,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2442" height="229" key="GridCell.Tab.0.bottom" timestamp="1608532472187">
+      <screen x="76" y="23" width="2484" height="1417" />
+    </state>
+    <state width="2442" height="229" key="GridCell.Tab.0.bottom/2560.231.1920.1057/76.23.2484.1417@76.23.2484.1417" timestamp="1608532472187" />
+    <state width="2442" height="229" key="GridCell.Tab.0.center" timestamp="1608532472187">
+      <screen x="76" y="23" width="2484" height="1417" />
+    </state>
+    <state width="2442" height="229" key="GridCell.Tab.0.center/2560.231.1920.1057/76.23.2484.1417@76.23.2484.1417" timestamp="1608532472187" />
+    <state width="2442" height="229" key="GridCell.Tab.0.left" timestamp="1608532472186">
+      <screen x="76" y="23" width="2484" height="1417" />
+    </state>
+    <state width="2442" height="229" key="GridCell.Tab.0.left/2560.231.1920.1057/76.23.2484.1417@76.23.2484.1417" timestamp="1608532472186" />
+    <state width="2442" height="229" key="GridCell.Tab.0.right" timestamp="1608532472187">
+      <screen x="76" y="23" width="2484" height="1417" />
+    </state>
+    <state width="2442" height="229" key="GridCell.Tab.0.right/2560.231.1920.1057/76.23.2484.1417@76.23.2484.1417" timestamp="1608532472187" />
+    <state x="1010" y="486" width="615" height="490" key="find.popup" timestamp="1608530854505">
+      <screen x="76" y="23" width="2484" height="1417" />
+    </state>
+    <state x="1010" y="486" width="615" height="490" key="find.popup/2560.231.1920.1057/76.23.2484.1417@76.23.2484.1417" timestamp="1608530854505" />
   </component>
 </project>

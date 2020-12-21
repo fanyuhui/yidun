@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int _platformVersion = 0;
+  String _platformVersion = 'Unknown';
 
   @override
   void initState() {
@@ -24,12 +24,12 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    int platformVersion;
+    String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       platformVersion = await YidunPlugin.platformVersion;
     } on PlatformException {
-      platformVersion = 1;
+      platformVersion = 'Failed to get platform version.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -50,7 +50,12 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: GestureDetector(
+            child: Text('Running on: $_platformVersion\n'),
+            onTap: (){
+              initPlatformState();
+            },
+          ),
         ),
       ),
     );

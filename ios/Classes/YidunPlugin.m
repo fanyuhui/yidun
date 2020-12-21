@@ -11,10 +11,9 @@
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([@"show" isEqualToString:call.method]) {
-      result(@"成功");
+      result(@"show");
   } else {
     result(FlutterMethodNotImplemented);
   }
 }
-
 @end
