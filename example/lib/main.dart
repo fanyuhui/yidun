@@ -15,13 +15,27 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  var eventChannel = const EventChannel("yd_captcha_flutter_event_channel");
 
   @override
   void initState() {
     super.initState();
+    eventChannel.receiveBroadcastStream().listen(_onData, onError: _onError);
     initPlatformState();
   }
 
+  void _onData(response) {
+    var validate = (response as Map)['validate'];
+    if (validate != null && !validate.isEmpty) {
+      print("来自Flutter的提示：验证通过, token:$validate");
+    } else {
+      print("来自Flutter的提示：验证失败");
+    }
+  }
+  _onError(Object error) {
+    PlatformException exception = error;
+    print("来自Flutter的提示，加载验证码出现错误:" + exception.message);
+  }
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     String platformVersion;
@@ -32,14 +46,16 @@ class _MyAppState extends State<MyApp> {
       platformVersion = 'Failed to get platform version.';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
     if (!mounted) return;
 
     setState(() {
       _platformVersion = platformVersion;
     });
+  }
+
+  Future<void> showCaptcha() async {
+       await YidunPlugin.showCaptcha('deecf3951a614b71b4b1502c072be1c1');
+    if (!mounted) return;
   }
 
   @override
@@ -53,7 +69,7 @@ class _MyAppState extends State<MyApp> {
           child: GestureDetector(
             child: Text('Running on: $_platformVersion\n'),
             onTap: (){
-              initPlatformState();
+              showCaptcha();
             },
           ),
         ),

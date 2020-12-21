@@ -1,11 +1,17 @@
 PODS:
   - Flutter (1.0.0)
+  - NTESVerifyCode (3.2.8)
   - yidun_plugin (0.0.1):
     - Flutter
+    - NTESVerifyCode
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - yidun_plugin (from `.symlinks/plugins/yidun_plugin/ios`)
+
+SPEC REPOS:
+  trunk:
+    - NTESVerifyCode
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,7 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  yidun_plugin: ee8c1604e696a05e8530a62c2ca001c53f02e510
+  NTESVerifyCode: 1bb76683eefcd99da42bdb22d11ab24e9baeb171
+  yidun_plugin: 066d9c8f30c7b48ef0aa5c2d03d5e5aa8f4cfa43
 
 PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
 
