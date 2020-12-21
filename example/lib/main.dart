@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  int _platformVersion = 0;
 
   @override
   void initState() {
@@ -24,12 +24,12 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
+    int platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       platformVersion = await YidunPlugin.platformVersion;
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      platformVersion = 1;
     }
 
     // If the widget was removed from the tree while the asynchronous platform
